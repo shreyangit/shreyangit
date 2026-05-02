@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://profile-counter.glitch.me/shreyangit/count.svg" alt="Profile views" />
+  <img src="https://komarev.com/ghpvc/?username=shreyangit&color=blueviolet&style=flat-square&label=PROFILE+VIEWS" alt="Profile views" />
 </div>
 
 <h1 align="center">
