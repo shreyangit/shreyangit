@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 300" width="800" height="300">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&amp;family=Inter:wght@300;400;600&amp;display=swap');
+      
+      .bg { fill: #070A11; }
+      .section-title { font-family: 'Inter', sans-serif; font-size: 14px; font-weight: 600; fill: #D4AF37; letter-spacing: 4px; text-transform: uppercase; }
+      
+      .layer-bg { fill: #0B0F19; stroke: #1F2937; stroke-width: 1; rx: 6; ry: 6; }
+      .layer-title { font-family: 'Playfair Display', serif; font-size: 16px; font-weight: 700; fill: #FFFFFF; }
+      .layer-text { font-family: 'Inter', sans-serif; font-size: 12px; font-weight: 300; fill: #8B949E; line-height: 1.8; }
+      
+      .arrow { stroke: #D4AF37; stroke-width: 2; fill: none; stroke-dasharray: 4 4; }
+      .arrow-head { fill: #D4AF37; }
+    </style>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" class="arrow-head" />
+    </marker>
+  </defs>
+
+  <rect width="100%" height="100%" class="bg" />
+  
+  <text x="40" y="40" class="section-title">❖ Architecture &amp; Stack</text>
+  <text x="40" y="65" class="layer-text">I don't just use frameworks; I understand the primitives underneath them.</text>
+  
+  <!-- Client Layer -->
+  <g transform="translate(40, 110)">
+    <rect width="200" height="150" class="layer-bg" />
+    <text x="20" y="35" class="layer-title">Client &amp; Edge</text>
+    <text x="20" y="70" class="layer-text">• Next.js / React</text>
+    <text x="20" y="95" class="layer-text">• TypeScript</text>
+    <text x="20" y="120" class="layer-text">• Tailwind / Framer</text>
+  </g>
+  
+  <!-- Arrow 1 -->
+  <path d="M 250 185 L 300 185" class="arrow" marker-end="url(#arrowhead)" />
+  
+  <!-- API Layer -->
+  <g transform="translate(315, 110)">
+    <rect width="200" height="150" class="layer-bg" />
+    <text x="20" y="35" class="layer-title">Services &amp; Compute</text>
+    <text x="20" y="70" class="layer-text">• Node.js / Express</text>
+    <text x="20" y="95" class="layer-text">• Go / WebSockets</text>
+    <text x="20" y="120" class="layer-text">• Python / FastAPI</text>
+  </g>
+
+  <!-- Arrow 2 -->
+  <path d="M 525 185 L 575 185" class="arrow" marker-end="url(#arrowhead)" />
+
+  <!-- Data Layer -->
+  <g transform="translate(590, 110)">
+    <rect width="170" height="150" class="layer-bg" />
+    <text x="20" y="35" class="layer-title">Data &amp; State</text>
+    <text x="20" y="70" class="layer-text">• PostgreSQL</text>
+    <text x="20" y="95" class="layer-text">• Redis</text>
+    <text x="20" y="120" class="layer-text">• MongoDB</text>
+  </g>
+
+</svg>
